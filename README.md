@@ -109,3 +109,9 @@ The dashboard can also be opened as a plain web page during development (it fall
   logs when available.
 - Reputation requires a Safe Browsing API key for live threat-feed data.
 - Some country-code TLDs don't expose RDAP data.
+
+## Disclaimer
+
+TrustScan is an analysis tool, **not a guarantee of website safety**. See
+[**DISCLAIMER.md**](DISCLAIMER.md) for the full legal disclaimer, limitation of liability,
+and terms of use.

@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "TrustScan — Website Trust Analyzer",
+  "short_name": "TrustScan",
+  "version": "1.0.0",
+  "description": "Analyze any website's security posture: TLS, security headers, DNS, domain age, redirects and reputation indicators — before you trust it.",
+  "minimum_chrome_version": "102",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "action": {
+    "default_title": "TrustScan — Analyze this website",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    },
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "permissions": ["storage", "contextMenus", "activeTab", "tabs"],
+  "host_permissions": ["<all_urls>"]
+}

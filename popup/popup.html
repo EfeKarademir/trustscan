@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="color-scheme" content="dark">
+  <title>TrustScan</title>
+  <link rel="stylesheet" href="../assets/fonts.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="ts-header">
+    <div class="brand-mark" aria-hidden="true"></div>
+    <div>
+      <div class="brand-name">TrustScan</div>
+      <div class="brand-sub">Website Trust &amp; Security Analyzer</div>
+    </div>
+  </header>
+
+  <section class="current-card" id="current-card">
+    <div class="current-label" id="current-label">Current tab</div>
+    <div class="current-host" id="current-host">—</div>
+    <button class="btn btn-primary btn-block" id="analyze-tab" disabled>Analyze this page</button>
+    <div class="current-note" id="current-note" hidden>Only http(s) pages can be analyzed.</div>
+  </section>
+
+  <section class="quick">
+    <form id="quick-form">
+      <div class="quick-input-wrap">
+        <input id="quick-url" type="text" placeholder="example.com" autocomplete="off" spellcheck="false">
+        <button class="btn btn-primary" type="submit" title="Analyze">Scan</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="recents">
+    <div class="recents-head">
+      <span>Recent scans</span>
+      <button class="link-btn" id="open-history">History</button>
+    </div>
+    <div id="recents-list" class="recents-list"></div>
+  </section>
+
+  <footer class="ts-footer">
+    <button class="link-btn" id="open-dashboard">Open dashboard</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
