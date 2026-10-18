@@ -115,3 +115,9 @@ The dashboard can also be opened as a plain web page during development (it fall
 TrustScan is an analysis tool, **not a guarantee of website safety**. See
 [**DISCLAIMER.md**](DISCLAIMER.md) for the full legal disclaimer, limitation of liability,
 and terms of use.
+
+## License
+
+Released under the [MIT License](LICENSE). The license grants free use, modification,
+and redistribution of the code; the disclaimer above still applies to any use of the
+Software.
